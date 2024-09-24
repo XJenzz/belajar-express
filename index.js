@@ -3,11 +3,11 @@ const app = express();
 const port = 3000
 
 //route untuk halaman home
-app.get('/',(req, res) => {
-    res.send('Selamat datang di ExpressJS');
-});
+// app.get('/',(req, res) => {
+//     res.send('Selamat datang di ExpressJS');
+// });
 
-app.get('/home',(req, res) => {
+app.get('/',(req, res) => {
     res.sendFile(__dirname + "/home.html");
 });
 
